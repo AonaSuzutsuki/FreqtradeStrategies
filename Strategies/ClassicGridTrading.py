@@ -36,7 +36,7 @@ class ClassicGridTradingStrategy(IStrategy):
     # Grid range
     grid_upper: float = 80000.0
     grid_lower: float = 60000.0
-    stop_lower: float = 5000.0
+    stop_lower: float = 50000.0
     grid_count: int = 25
 
     # Leverage
