@@ -53,6 +53,12 @@ Example:
 freqtrade trade --strategy ClassicGridTradingStrategy
 ```
 
+## Backtest
+
+The latest 1-month backtest summary for `ClassicGridTradingStrategy` is available here:
+
+- [Backtest Summary](Backtest/ClassicGridTrading/backtest-summary-2026-04-23_05-58-50.md)
+
 ## Live Usage
 
 This strategy is currently used in live trading on `Bitget` with `BTC/USDT:USDT`.
