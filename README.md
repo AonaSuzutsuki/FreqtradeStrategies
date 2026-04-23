@@ -30,12 +30,20 @@ Market notes:
 
 Default strategy profile:
 
-- Timeframe: `15m`
-- Grid range: `60000` to `80000`
-- Stop level: `50000`
-- Grid count: `25`
-- Leverage: `3x`
-
+- Timeframe: `15m`  
+  I've specified a 15-minute timeframe, but that's irrelevant since this isn't a trend-following strategy.  
+- Grid range: `60000` to `80000`  
+  These are the upper and lower limits of the grid.  
+  No trades will occur if the value falls below or exceeds these limits.  
+- Stop level: `50000`  
+  If the price falls below this level, the position will be forcibly closed. This is equivalent to a stop-loss.  
+- Grid count: `25`  
+  [Grid range] This is the number of grids to divide the range into. (Arithmetic Grid)  
+  Please calculate the fees and minimum order quantity before setting, as they are not taken into consideration.  
+- Leverage: `3x`  
+  This is the leverage used in futures mode.  
+  The default is 3x, but please change it as needed.  
+ 
 The strategy file is located at `Strategies/ClassicGridTrading.py` and exposes the strategy class `ClassicGridTradingStrategy`.
 
 
